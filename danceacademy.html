@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="veiport" content="with=device-width,initial-scale=1.0">
+  <title>web creation</title>
+  <link rel="stylesheet" type="text/css" href="css/danceacademy.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</head>
+<body>
+ <!-- Navigation -->
+ <nav class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#features">Features</a>
+  <a href="#Contact">Contact</a>
+ </nav>
+
+ <!-- Slide Show -->
+<section>
+  <img class="mySlides" src="Danceacademy2.jpg"
+  style="width:100%">
+  <img class="mySlides" src="Danceacademy3.jpg"
+  style="width:100%">
+  <img class="mySlides" src="gallery3.jpg"
+  style="width:100%">
+  <header>
+    <div class="title">
+      <h1>Dance Academy</h1>
+      <p>“Dance is the hidden language of the soul.”</p>
+    </div>
+   <div class="button">
+     <a href="#" class="btn">WATCH VIDEO</a>
+     <a href="#" class="btn">LEARN MORE</a>
+   </div>
+
+</header>
+</section>
+<!--About-->
+
+<section id="about">
+  <div class="about_sec">
+    <div class="about-left-col">
+      <img src="Danceacademy3.jpg">
+    </div>
+    <div class="about-right-col">
+      <div class="about-text">
+        <h3>About us</h3>
+        <span class="square"></span>
+        <p>The Dance Academy, established since October 2020 aims to provide students with a professional dance curriculum exposing them to well structured training programmes in the various dance disciplines. Students are encouraged to develop their dance skills and performance qualities to the maximum.
+
+        Students in classical ballet, girls and boys, can enroll as of the age of three years. The school follows the Royal Academy of Dance London Syllabus as well as the Cecchetti Syllabus. These are structured around the physical and motor abilities of the students.
+
+        At the tender age of three, classes are structured with a 'recreational' focus. Here the importance of 'fun' and 'imagination' are the essential elements of the class. From the age of six, students begin to follow the well structured graded syllabus of the Royal Academy of Dance. Throughout the graded syllabus students are introduced to 'Free Movement' and 'Character.'</p>
+        <button class="common-btn">Read More</button>
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+          </div>
+        <h3>Dance is the joy of movement and the heart of life.</h3>
+        <h4>---Ankita raut.</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<!--features-->
+<section id="features">
+  <div class="feature-row">
+    <div class="feature-col">
+      <img src="pic1.jpg">
+      <h5>Learn Anywhere</h5>
+      <p>Switch between your computer, tablet or mobile device</p>
+    </div>
+    <div class="feature-col">
+      <img src="pic2.jpg">
+      <h5>Expert teacher</h5>
+      <p>Learn from expert chirographer, who are passionate about teaching.</p>
+    </div>
+    <div class="feature-col">
+    <img src="pic3.jpg">
+    <h5>Unlimited Access</h5>
+    <p>Choose what you'd like to learn from our extensive</p>
+    <p> subscription library.</p>
+    </div>
+  </div>
+  <div class="feature-btn">
+    <div class="line">
+      <span class="line-1"></span><br>
+      <span class="line-2"></span><br>
+      <span class="line-3"></span>
+       </div>
+    <button class="common-btn">Start free trial</button>
+  <div class="line right">
+    <span class="line-1"></span><br>
+    <span class="line-2"></span><br>
+    <span class="line-3"></span>
+  </div>
+</div>
+</section>
+
+  <!--contact-->
+
+  <div class="container">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+      <p>Lets Dance Together:</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="Danceacademy.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="Muzaffarpur">-- Select Country--</option>
+            <option value="Muzaffarpur">Muzaffarpur</option>
+            <option value="Patna">Patna</option>
+            <option value="Dharbhanga">Dharbhanga</option>
+            <option value="Motihari">Motihari</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+<!-- Footer -->
+<footer class="Danceacademy">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="Danceacademy-medium">
+  Powered by <a href="file:///C:/Users/Ankit%20Anand/Desktop/Dance%20academy/danceacademy.html" target="_blank">Dance Academy</a>
+  </p>
+
+</footer>
+<script>
+  // Automatic Slideshow - change image every 3 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+  </script>
+</body>
+</html>
